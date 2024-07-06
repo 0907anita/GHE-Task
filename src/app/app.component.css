@@ -1,0 +1,27 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  .nav-item {
+    pointer-events: auto; /* Enable pointer events for clickable home icon */
+  }
+  
+  .nav-bar img {
+    width: 32px; /* Adjust image size as needed */
+    height: 32px;
+    margin-right: 10px; /* Adjust margin between icons */
+  }
+  
+  @media (max-width: 768px) {
+    .nav-bar {
+      flex-wrap: wrap; /* Wrap items on smaller screens */
+    }
+  
+    .nav-bar img {
+      margin-bottom: 10px; /* Space between icons in vertical layout */
+    }
+  }
+  

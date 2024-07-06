@@ -1,0 +1,54 @@
+{
+    "welcomeMessage": "Welcome, June!",
+    "wellnessOverview": {
+      "weight": "80.5 kgs",
+      "sleepHours": "7/8 Hours",
+      "waterIntake": "4/8 Glasses",
+      "bmi": {
+        "value": 40,
+        "status": "Overweight"
+      }
+    },
+    "overallSkinScore": {
+      "value": 45,
+      "weeks": 5,
+      "uploads": 20
+    },
+    "hairTracker": {
+      "weeks": 5,
+      "uploads": 20
+    },
+    "articles": [
+      {
+        "title": "6 Surprising Benefits of Washing Your Face with Salt Water",
+        "author": "Mars by GHC",
+        "date": "Jun 22, 2022",
+        "image": "assets/images/article1.jpg"
+      },
+      {
+        "title": "Get Clear Skin with these Simple Tips",
+        "author": "Mars by GHC",
+        "date": "Jun 25, 2022",
+        "image": "assets/images/article2.jpg"
+      }
+    ],
+    "products": [
+      {
+        "name": "Anti-ageing Combo",
+        "price": "Rs. 999",
+        "originalPrice": "Rs. 1,598",
+        "rating": 4.7,
+        "discount": "-40%",
+        "image": "assets/images/product1.jpg"
+      },
+      {
+        "name": "Anti-ageing Combo",
+        "price": "Rs. 999",
+        "originalPrice": "Rs. 1,598",
+        "rating": 4.7,
+        "discount": "-40%",
+        "image": "assets/images/product2.jpg"
+      }
+    ]
+  }
+  

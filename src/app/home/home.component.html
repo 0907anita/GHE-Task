@@ -1,0 +1,179 @@
+<div class="container">
+    <header class="header">
+      <img src="assets/images/ghc-logo.png" width="36px" height="36px" alt="GHC Logo" class="header-img logo-left">
+      <img src="assets/images/saturn-logo.svg" width="118px" height="51px" alt="Saturn logo" class="header-img logo-center">
+      <img src="assets/images/cart.svg" width="40px" height="36px" alt="cart icon" class="header-img logo-right">
+    </header>
+  
+    <section class="hero-overview">
+        <p class="welcome-common">
+            <span class="welcome-first">Welcome,</span>
+            <span class="welcome-last"> June!</span>
+          </p>          
+    <div class="hero-section">
+        <img src="assets/images/track.svg" alt="track icon">
+        <img src="assets/images/wallet.svg" alt="wallet icon">
+        <img src="assets/images/blogs.svg" alt="blogs icon">
+        <img src="assets/images/consult.svg" alt="consult icon">
+    </div>
+    </section>
+
+    <section>
+        <div class="wellness-card">
+          <div class="wellness-overview">
+            <p>Wellness Overview:</p>
+            <div class="well-det">
+                <h1>40</h1>
+                <button>Overweight</button>
+            </div>
+            <p>Your current BMI</p>
+          </div>
+          <div class="wellness-details">
+            <div class="wellness-detail-item">
+              <button>
+                <img src="assets/images/ic_baseline-water-drop-red.svg" alt="water drop red icon">
+                <span>80.5 kgs</span>
+            </button>
+            </div>
+            <div class="wellness-detail-item">
+                <button>
+                <img src="assets/images/ic_baseline-water-drop-pink.svg" alt="water drop pink icon">
+            <span>7/8 Hours</span>  
+            </button>
+            </div>
+            <div class="wellness-detail-item">
+                <button>
+                <img src="assets/images/ic_baseline-water-drop-blue.svg" alt="water drop blue icon">
+            <span>4/8 Glasses</span>  
+            </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="dashboard">
+          <div class="card skin card-left">
+            <div class="score">
+              <p class="sub-heading">Overall Skin score:</p>
+              <div class="score-details">
+                <div class="column">
+                  <h1>45</h1>
+                </div>
+                <div class="column">
+                  <div class="detail-item">
+                    <img src="assets/images/humidity-red-icon.svg" width="13px" height="13px" alt="Humidity Icon">
+                    <span>5 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <img src="assets/images/gallery.svg" width="13px" height="13px" alt="Image Icon">
+                    <span>20 uploads</span>
+                  </div>
+                </div>
+              </div>
+              <img src="assets/images/progress-baar.svg" width="100" alt="Humidity Icon">
+              <p>Week: <span style="font-weight: 700;">40/54</span></p>
+            </div>
+          </div>
+          <div class="card hair card-right">
+            <div class="score">
+              <p class="sub-heading">Hair Tracker:</p>
+                <div class="column">
+                  <div class="detail-item">
+                    <img src="assets/images/humidity-red-icon.svg" width="13px" height="13px" alt="Humidity Icon">
+                    <span>5 weeks</span>
+                  </div>
+                  <div class="detail-item">
+                    <img src="assets/images/gallery.svg" width="13px" height="13px" alt="Image Icon">
+                    <span>20 uploads</span>
+                  </div>
+                </div>
+              <img src="assets/images/progress-baar.svg" width="100" alt="Humidity Icon">
+              <p>Week: <span style="font-weight: 700;">40/54</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    <div class="view-all-trackers">
+      <p>View all trackers</p>
+      <img [lazyLoad]="'assets/images/next-arrow-icon.svg'" alt="next arrow icon">
+    </div>
+  
+    <div class="carousel">
+      <div class="slides" [style.transform]="transform">
+        <img *ngFor="let image of images" [lazyLoad]="image" alt="Carousel image">
+      </div>
+    </div>
+  
+    <div class="header-container">
+      <h2 class="heading">Bestsellers</h2>
+      <button class="view-all-button">View All</button>
+    </div>
+  
+    <div class="skin-talk-carousel1">
+      <div class="skin-talk-slides1">
+        <img *ngFor="let image of skincareImages; let i = index"
+             [lazyLoad]="image" width="156px" height="221px"
+             [alt]="'Carousel image ' + i">
+      </div>
+    </div>
+  
+    <div class="header-container">
+      <h2 class="heading">Hair Care</h2>
+      <button class="view-all-button">View All</button>
+    </div>
+  
+    <div class="skin-talk-carousel1">
+      <div class="skin-talk-slides1">
+        <img *ngFor="let image of haircareImages; let i = index"
+             [lazyLoad]="image" width="156px" height="221px"
+             [alt]="'Carousel image ' + i">
+      </div>
+    </div>
+  
+    <div class="header-container">
+      <h2 class="heading">Understanding Hair</h2>
+      <button class="view-all-button">View All</button>
+    </div>
+  
+    <div class="skin-talk-carousel1">
+      <div class="skin-talk-slides1">
+        <img *ngFor="let image of understandingHairImages; let i = index"
+             [lazyLoad]="image" width="271px" height="271px"
+             [alt]="'Carousel image ' + i">
+      </div>
+    </div>
+  
+    <div class="header-container">
+      <h2 class="heading">Skin Care</h2>
+    </div>
+  
+    <div class="skin-talk-carousel1">
+      <div class="skin-talk-slides1">
+        <img *ngFor="let image of skincareImages; let i = index"
+             [lazyLoad]="image" width="156px" height="221px"
+             [alt]="'Carousel image ' + i">
+      </div>
+    </div>
+  
+    <div class="header-container">
+      <h2 class="heading">Skin - Talk</h2>
+    </div>
+  
+    <div class="skin-talk-carousel1">
+      <div class="skin-talk-slides1">
+        <img *ngFor="let image of skintalkImages; let i = index"
+             [lazyLoad]="image" width="271px" height="271px"
+             [alt]="'Carousel image ' + i">
+      </div>
+    </div>
+  
+    <div class="view-all-trackers">
+      <img [lazyLoad]="'assets/images/instagram-icon.svg'" alt="instagram icon">
+      <p>Join our 10k family on Instagram</p>
+      <img [lazyLoad]="'assets/images/next-arrow-icon.svg'" alt="next arrow icon">
+    </div>
+  
+  </div>
+  
