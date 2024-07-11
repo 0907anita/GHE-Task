@@ -303,33 +303,10 @@ text-align: left;
 .slides img {
     width: 100%;
     flex-shrink: 0;
-}
-
-.skin-talk-carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    cursor: grab;
-}
-
-.skin-talk-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.skin-talk-slides img {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 300px;
+    height: auto;
 }
 
 @media (max-width: 768px) {
-    .skin-talk-slides img {
-        width: calc(100% / 1.5); 
-    }
     .carousel{
         max-width: 600px;
     }
@@ -340,7 +317,6 @@ text-align: left;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* padding: 0 15px; */
   }
 
   .view-all-button {
@@ -366,35 +342,4 @@ line-height: 14px;
 letter-spacing: 0.18000000715255737px;
 text-align: left;
 }
-
-
-.skin-talk-carousel1 {
-    overflow-x: hidden;
-  }
-  
-  .skin-talk-slides1 {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  @media (max-width: 768px) {
-    .skin-talk-carousel1 {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scroll-behavior: smooth;
-    }
-  
-    .skin-talk-slides1 {
-      display: flex;
-    }
-  
-    .skin-talk-carousel1::-webkit-scrollbar {
-      display: none;
-    }
-  
-    .skin-talk-carousel1 {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  }
   

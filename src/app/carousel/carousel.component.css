@@ -1,0 +1,29 @@
+.skin-talk-carousel1 {
+    overflow-x: hidden;
+  }
+  
+  .skin-talk-slides1 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .skin-talk-carousel1 {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+  
+    .skin-talk-slides1 {
+      display: flex;
+    }
+  
+    .skin-talk-carousel1::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .skin-talk-carousel1 {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }

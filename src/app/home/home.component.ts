@@ -39,6 +39,7 @@ export class HomeComponent {
     { name: 'Anti-ageing Combo', image: 'assets/images/product/product-img-2.svg', starsArray: [1, 2, 3, 4, 5], rating: '4.7', price: 'Rs. 999', oprice: 'Rs. 15,98' },
     { name: 'Anti-ageing Combo', image: 'assets/images/product/product-img-3.svg', starsArray: [1, 2, 3, 4, 5], rating: '4.7', price: 'Rs. 999', oprice: 'Rs. 15,98' },
   ];
+  
   constructor() {}
 
   ngOnInit() {

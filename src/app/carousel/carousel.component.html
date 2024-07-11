@@ -1,0 +1,8 @@
+     <div class="skin-talk-carousel1">
+      <div class="skin-talk-slides1">
+        <img *ngFor="let image of images; let i = index"
+             [lazyLoad]="image" width="271px" height="271px"
+             [alt]="'Carousel image ' + i">
+      </div>
+    </div>
+  

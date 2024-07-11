@@ -118,14 +118,8 @@
       <h2 class="heading">Understanding Hair</h2>
       <button class="view-all-button">View All</button>
     </div>
-  
-    <div class="skin-talk-carousel1">
-      <div class="skin-talk-slides1">
-        <img *ngFor="let image of understandingHairImages; let i = index"
-             [lazyLoad]="image" width="271px" height="271px"
-             [alt]="'Carousel image ' + i">
-      </div>
-    </div>
+    
+    <app-carousel [images]="understandingHairImages"></app-carousel>
   
     <div class="header-container">
       <h2 class="heading">Skin Care</h2>
@@ -137,13 +131,7 @@
       <h2 class="heading">Skin - Talk</h2>
     </div>
   
-    <div class="skin-talk-carousel1">
-      <div class="skin-talk-slides1">
-        <img *ngFor="let image of skintalkImages; let i = index"
-             [lazyLoad]="image" width="271px" height="271px"
-             [alt]="'Carousel image ' + i">
-      </div>
-    </div>
+    <app-carousel [images]="skintalkImages"></app-carousel>
   
     <div class="view-all-trackers">
       <img [lazyLoad]="'assets/images/instagram-icon.svg'" alt="instagram icon">

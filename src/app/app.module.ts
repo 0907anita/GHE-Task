@@ -9,6 +9,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { HeaderComponent } from './shared/header/header.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ProductComponent } from './product/product.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProductComponent } from './product/product.component';
     HomeComponent,
     HeaderComponent,
     NavbarComponent,
-    ProductComponent
+    ProductComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
