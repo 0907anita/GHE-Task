@@ -1,0 +1,16 @@
+
+  <div class="skin-talk-carousel">
+    <div class="skin-talk-slides" [ngStyle]="slideStyles">
+      <div class="slide" *ngFor="let product of products; let i = index">
+        <img [lazyLoad]="product.image" width="156px" height="221px" [alt]="'Carousel image ' + i">
+        <div class="product-details">
+          <h3>{{ product.name }}</h3>
+          <div class="rating">
+            <p class="star" *ngFor="let star of product.starsArray">&#9733;</p> <span>({{ product.rating }})</span>
+          </div>
+          <p class="price">{{ product.price }} <span class="original-price">{{ product.oprice }}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

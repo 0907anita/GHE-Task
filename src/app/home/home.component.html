@@ -105,26 +105,14 @@
       <button class="view-all-button">View All</button>
     </div>
   
-    <div class="skin-talk-carousel1">
-      <div class="skin-talk-slides1">
-        <img *ngFor="let image of skincareImages; let i = index"
-             [lazyLoad]="image" width="156px" height="221px"
-             [alt]="'Carousel image ' + i">
-      </div>
-    </div>
-  
+    <app-product title="Bestsellers" [products]="bestSellerProducts"></app-product>
+
     <div class="header-container">
       <h2 class="heading">Hair Care</h2>
       <button class="view-all-button">View All</button>
     </div>
   
-    <div class="skin-talk-carousel1">
-      <div class="skin-talk-slides1">
-        <img *ngFor="let image of haircareImages; let i = index"
-             [lazyLoad]="image" width="156px" height="221px"
-             [alt]="'Carousel image ' + i">
-      </div>
-    </div>
+    <app-product title="Haircare" [products]="hairCareProducts"></app-product>
   
     <div class="header-container">
       <h2 class="heading">Understanding Hair</h2>
@@ -143,13 +131,7 @@
       <h2 class="heading">Skin Care</h2>
     </div>
   
-    <div class="skin-talk-carousel1">
-      <div class="skin-talk-slides1">
-        <img *ngFor="let image of skincareImages; let i = index"
-             [lazyLoad]="image" width="156px" height="221px"
-             [alt]="'Carousel image ' + i">
-      </div>
-    </div>
+    <app-product title="Skincare" [products]="skinCareProducts"></app-product>
   
     <div class="header-container">
       <h2 class="heading">Skin - Talk</h2>

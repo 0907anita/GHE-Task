@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { HeaderComponent } from './shared/header/header.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ProductComponent } from './product/product.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
