@@ -1,10 +1,8 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  
-  .welcome-common{
+.container{
+  padding: 10px;
+}
+
+.welcome-common{
   font-family: Roboto;
   font-size: 22px;
   line-height: 25.78px;
@@ -18,47 +16,6 @@
   
   .welcome-last {
     font-weight: 400;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    width: 100%;
-  }
-  
-  .header-img {
-    flex-shrink: 0;
-  }
-  
-  .logo-left {
-    justify-self: flex-start;
-  }
-  
-  .logo-center {
-    margin: 0 auto;
-  }
-  
-  .logo-right {
-    justify-self: flex-end;
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: row;
-      padding: 0 10px;
-    }
-  
-    .logo-left, .logo-right {
-      width: 30px;
-      height: auto; 
-    }
-  
-    .logo-center {
-      width: 90px;
-      height: auto;
-    }
   }
   
   .view-all-trackers {
@@ -211,7 +168,8 @@ color: #777777;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%
+    width: 100%;
+    max-width: 300px;
   }
 
   .wellness-detail-item img {
@@ -299,9 +257,8 @@ white-space: nowrap;
   
 .hero-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px 10px 10px 10px;
   }
   
   .hero-section img {

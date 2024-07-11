@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.header-img {
+  flex-shrink: 0;
+}
+
+.logo-left {
+  justify-self: flex-start;
+}
+
+.logo-center {
+  margin: 0 auto;
+}
+
+.logo-right {
+  justify-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 0 10px;
+  }
+
+  .logo-left, .logo-right {
+    width: 30px;
+    height: auto; 
+  }
+
+  .logo-center {
+    width: 90px;
+    height: auto;
+  }
+}
+
